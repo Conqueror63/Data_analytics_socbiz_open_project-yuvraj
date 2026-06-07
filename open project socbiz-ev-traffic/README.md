@@ -1,10 +1,12 @@
-# Agentic AI Based Dynamic Tariff Optimization for EV Charging Networks
-Open Project 2026 · Society of Business
+# Agentic AI-Driven Dynamic Pricing Framework for EV Charging Infrastructure
 
-## Dataset Setup
-The datasets are not included in this repository as they were provided via the competition Google Drive.
+**Open Project 2026 · Society of Business**
 
-Before running the notebooks, create the following folder structure and place the files accordingly:
+## Dataset Configuration
+
+The datasets are not bundled with this repository since they were distributed separately through the competition's Google Drive.
+
+Before executing the notebooks, organize the files using the following directory structure:
 
 data/
 ├── raw/
@@ -18,20 +20,32 @@ data/
 │       ├── time.csv
 │       └── stations.csv
 
-## Setup
-1. Create a virtual environment: `python -m venv venv`
-2. Activate it: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
-3. Install dependencies: `pip install -r requirements.txt`
+## Environment Setup
 
-## Running the Notebooks
-Run in order:
-1. `01_data_preprocessing.ipynb`
-2. `02_eda.ipynb`
-3. `03_demand_prediction_agent.ipynb`
-4. `04_tariff_pricing_agent.ipynb`
-5. `05_monitoring_learning_agent.ipynb`
+1. Create a virtual environment:
+   `python -m venv venv`
 
-## Outputs
-All results are saved automatically to:
-- `outputs/csvs/` — metric scores and evaluation results
-- `outputs/plots/` — all visualizations
+2. Activate the environment:
+
+   * Windows: `venv\Scripts\activate`
+   * macOS/Linux: `source venv/bin/activate`
+
+3. Install the required packages:
+   `pip install -r requirements.txt`
+
+## Notebook Execution Sequence
+
+Run the notebooks in the following order:
+
+1. `01_data_preparation.ipynb`
+2. `02_exploratory_analysis.ipynb`
+3. `03_demand_forecasting_agent.ipynb`
+4. `04_dynamic_pricing_agent.ipynb`
+5. `05_feedback_learning_agent.ipynb`
+
+## Generated Outputs
+
+The project automatically stores outputs in:
+
+* `outputs/csvs/` — performance metrics, model evaluations, and result tables
+* `outputs/plots/` — charts, graphs, and visual analytics
